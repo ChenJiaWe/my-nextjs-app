@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "NeuemachinaLight";
+  src: url("../font/neuemachina-light.otf") format("opentype");
+}
+@font-face {
+  font-family: "NeuemachinaRegular";
+  src: url("../font/neuemachina-regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "NeuemachinaUltrabold";
+  src: url("../font/neuemachina-ultrabold.otf") format("opentype");
+}
+@font-face {
+  font-family: "NEXT-Book-Bold";
+  src: url("../font/next/NEXT-Book-Bold.otf") format("opentype");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,13 +34,8 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #ededed;
+  background: #030303;
 }
 
 @layer utilities {
